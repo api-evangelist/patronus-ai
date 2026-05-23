@@ -1,0 +1,188 @@
+aid: patronus-ai
+url: https://raw.githubusercontent.com/api-evangelist/patronus-ai/refs/heads/main/apis.yml
+name: Patronus AI
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- LLM Evaluation
+- Guardrails
+- Judges
+- Hallucination Detection
+- AI Research
+- Benchmarks
+- API
+description: Patronus AI is an evaluation and guardrails platform for production LLM applications and AI agents. It combines
+  an API-first evaluation service with Python and TypeScript SDKs, in-house judge models (Lynx for hallucination detection,
+  Glider for reasoning evaluation, Percival for agent debugging), and a portfolio of open benchmarks and datasets including
+  FinanceBench, BLUR, and RL environments. Customers use Patronus for experimentation, production monitoring, RAG and agent
+  evaluation, dataset generation, and human-in-the-loop annotation.
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+- aid: patronus-ai:patronus-evaluation-api
+  name: Patronus Evaluation API
+  tags:
+  - LLM Evaluation
+  - Judges
+  - API
+  - Scoring
+  humanURL: https://docs.patronus.ai/docs
+  properties:
+  - url: https://docs.patronus.ai/docs
+    type: Documentation
+  - url: https://docs.patronus.ai/reference
+    type: APIReference
+  description: The Patronus Evaluation API scores LLM outputs against built-in and custom evaluators covering hallucination,
+    answer relevance, context utilization, safety, and PII. Evaluators can be invoked synchronously for guardrails, asynchronously
+    for batch scoring, and as part of experiment runs that compare prompt and model variants over datasets.
+- aid: patronus-ai:patronus-python-sdk
+  name: Patronus Python SDK
+  tags:
+  - SDK
+  - Python
+  - Tracing
+  - Evaluation
+  humanURL: https://github.com/patronus-ai/patronus-py
+  properties:
+  - url: https://github.com/patronus-ai/patronus-py
+    type: SourceCode
+  - url: https://pypi.org/project/patronus/
+    type: SDK
+  description: The Patronus Python SDK provides decorators and clients for instrumenting LLM applications, running evaluators
+    inline, recording traces, and pushing experiments to the Patronus platform.
+- aid: patronus-ai:patronus-typescript-sdk
+  name: Patronus TypeScript SDK
+  tags:
+  - SDK
+  - TypeScript
+  - JavaScript
+  - Tracing
+  humanURL: https://github.com/patronus-ai/patronus-typescript
+  properties:
+  - url: https://github.com/patronus-ai/patronus-typescript
+    type: SourceCode
+  description: The Patronus TypeScript SDK brings the same evaluation, tracing, and experiment workflows to Node.js and
+    browser environments used by JavaScript-first AI applications.
+- aid: patronus-ai:lynx
+  name: Lynx
+  tags:
+  - Hallucination Detection
+  - Judge Model
+  - Open Source
+  humanURL: https://www.patronus.ai/blog/lynx-state-of-the-art-open-source-hallucination-detection-model
+  properties:
+  - url: https://www.patronus.ai/blog/lynx-state-of-the-art-open-source-hallucination-detection-model
+    type: Documentation
+  - url: https://huggingface.co/PatronusAI/Llama-3-Patronus-Lynx-70B-Instruct
+    type: ModelWeights
+  description: Lynx is Patronus's open-weights hallucination detection model published on Hugging Face. It is positioned
+    as state-of-the-art on hallucination benchmarks and is available both as downloadable weights and as a hosted judge
+    inside the Patronus Evaluation API.
+- aid: patronus-ai:glider
+  name: Glider
+  tags:
+  - Judge Model
+  - Reasoning Evaluation
+  - Open Source
+  humanURL: https://www.patronus.ai/blog/glider
+  properties:
+  - url: https://www.patronus.ai/blog/glider
+    type: Documentation
+  description: Glider is Patronus's small judge model for evaluating reasoning chains and rubric-based scoring with low
+    latency and cost relative to large frontier judges.
+- aid: patronus-ai:percival
+  name: Percival
+  tags:
+  - Agent Debugging
+  - Tracing
+  - Evaluation
+  humanURL: https://www.patronus.ai/percival
+  properties:
+  - url: https://www.patronus.ai/percival
+    type: Documentation
+  description: Percival is Patronus's agent debugging product that ingests agent traces and surfaces failure modes, tool
+    misuse, and reasoning errors across multi-step runs.
+- aid: patronus-ai:financebench
+  name: FinanceBench
+  tags:
+  - Benchmark
+  - Dataset
+  - Finance
+  - Research
+  humanURL: https://www.patronus.ai/announcements/financebench-benchmark
+  properties:
+  - url: https://www.patronus.ai/announcements/financebench-benchmark
+    type: Documentation
+  - url: https://github.com/patronus-ai/financebench
+    type: SourceCode
+  description: FinanceBench is an open benchmark of 10,000 financial question-answer pairs grounded in public filings,
+    used to evaluate LLM performance on financial document understanding.
+common:
+- type: Website
+  url: https://www.patronus.ai/
+- type: Documentation
+  url: https://docs.patronus.ai/
+- type: APIReference
+  url: https://docs.patronus.ai/reference
+- type: Blog
+  url: https://www.patronus.ai/blog
+- type: Pricing
+  url: https://www.patronus.ai/pricing
+- type: Login
+  url: https://app.patronus.ai/
+- type: GitHubOrganization
+  url: https://github.com/patronus-ai
+- type: Research
+  url: https://www.patronus.ai/research
+- type: Contact
+  url: mailto:contact@patronus.ai
+- type: Security
+  url: mailto:security@patronus.ai
+- type: Features
+  data:
+  - name: Evaluation API
+    description: Hosted API for running built-in and custom evaluators on LLM inputs and outputs.
+  - name: Lynx Hallucination Detection
+    description: State-of-the-art open-weights hallucination judge available as a hosted evaluator.
+  - name: Glider Judge
+    description: Small reasoning-focused judge for rubric-based evaluation at production latency.
+  - name: Percival Agent Debugger
+    description: Agent trace analysis surfacing failure modes, tool misuse, and reasoning errors.
+  - name: Experimentation
+    description: Compare prompts, models, and configurations across datasets with side-by-side outputs.
+  - name: Production Monitoring
+    description: Real-time alerts, tracing, and dashboards for live LLM applications.
+  - name: Dataset Generation
+    description: Synthetic dataset creation including red-teaming sets for RAG and agent systems.
+  - name: Human Annotation
+    description: Workflows for human-in-the-loop labeling and reviewer agreement tracking.
+- type: UseCases
+  data:
+  - name: RAG Evaluation
+    description: Score retrieval and generation quality in RAG applications across faithfulness, relevance, and context.
+  - name: Agent Debugging
+    description: Trace and diagnose failures in multi-step agentic systems using Percival.
+  - name: Model Benchmarking
+    description: Benchmark candidate models against domain-specific datasets such as FinanceBench.
+  - name: Guardrails
+    description: Apply Patronus judges as runtime guardrails on LLM responses.
+  - name: Regression Testing
+    description: Detect quality regressions across prompt, model, and configuration changes.
+- type: Integrations
+  data:
+  - name: OpenAI
+    description: Score outputs from OpenAI models inside Patronus experiments and monitoring.
+  - name: Anthropic
+    description: Evaluate Anthropic Claude outputs using Patronus judges.
+  - name: LangChain
+    description: SDK integrations for LangChain chains and agents.
+  - name: LlamaIndex
+    description: Evaluate LlamaIndex RAG pipelines with Patronus evaluators.
+  - name: OpenTelemetry
+    description: Ingest OTel-compatible LLM traces for evaluation and monitoring.
+  - name: Hugging Face
+    description: Lynx and Glider weights are distributed via Hugging Face for self-hosting.
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
