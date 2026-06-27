@@ -48,7 +48,7 @@ apis:
   - url: https://github.com/patronus-ai/patronus-py
     type: SourceCode
   - url: https://pypi.org/project/patronus/
-    type: SDK
+    type: SDKs
   description: The Patronus Python SDK provides decorators and clients for instrumenting LLM applications, running evaluators
     inline, recording traces, and pushing experiments to the Patronus platform.
 - aid: patronus-ai:patronus-typescript-sdk
