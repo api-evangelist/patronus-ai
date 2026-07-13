@@ -2,13 +2,14 @@
   "repo": "patronus-ai",
   "feeds": [
     {
-      "source": "https://www.patronus.ai/blog",
-      "feed_url": "",
-      "saved": 1,
-      "method": "agent-scrape"
+      "source": "https://docs.patronus.ai/reference",
+      "feed_url": "https://docs.patronus.ai/reference",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
   "post_count": 1,
-  "fetched": "2026-06-27T13:00:06Z",
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z",
+  "agent_pulled": "2026-07-04"
 }
