@@ -31,7 +31,7 @@ description: Patronus AI is an evaluation and guardrails platform for production
   and human-in-the-loop annotation.
 created: '2026-05-23'
 modified: '2026-08-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: patronus-ai:patronus-evaluation-api
   name: Patronus Evaluation API
