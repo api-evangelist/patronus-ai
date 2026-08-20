@@ -22,6 +22,13 @@ tags:
 - Hallucination Detection
 - AI Research
 - Benchmarks
+tags_raw:
+- LLM Evaluation
+- Guardrails
+- Judges
+- Hallucination Detection
+- AI Research
+- Benchmarks
 - API
 description: Patronus AI is an evaluation and guardrails platform for production LLM applications and
   AI agents. It combines an API-first evaluation service with Python and TypeScript SDKs, in-house judge
@@ -36,6 +43,10 @@ apis:
 - aid: patronus-ai:patronus-evaluation-api
   name: Patronus Evaluation API
   tags:
+  - LLM Evaluation
+  - Judges
+  - Scoring
+  tags_raw:
   - LLM Evaluation
   - Judges
   - API
@@ -83,6 +94,10 @@ apis:
   tags:
   - Hallucination Detection
   - Judge Model
+  - Open-Source
+  tags_raw:
+  - Hallucination Detection
+  - Judge Model
   - Open Source
   humanURL: https://www.patronus.ai/blog/lynx-state-of-the-art-open-source-hallucination-detection-model
   properties:
@@ -96,6 +111,10 @@ apis:
 - aid: patronus-ai:glider
   name: Glider
   tags:
+  - Judge Model
+  - Reasoning Evaluation
+  - Open-Source
+  tags_raw:
   - Judge Model
   - Reasoning Evaluation
   - Open Source
@@ -120,6 +139,11 @@ apis:
 - aid: patronus-ai:financebench
   name: FinanceBench
   tags:
+  - Benchmarks
+  - Dataset
+  - Finance
+  - Research
+  tags_raw:
   - Benchmark
   - Dataset
   - Finance
