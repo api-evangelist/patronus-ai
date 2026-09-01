@@ -151,7 +151,7 @@ apis:
 - aid: patronus-ai:financebench
   name: FinanceBench
   tags:
-  - Benchmark
+  - Benchmarks
   - Dataset
   - Finance
   - Research
