@@ -3,16 +3,21 @@ url: https://raw.githubusercontent.com/api-evangelist/patronus-ai/refs/heads/mai
 name: Patronus AI
 type: Index
 deliveryModel:
-  model: unknown
+  model: saas
+  license_evidence:
+    not_product:
+    - patronus-ai/financebench
+    - patronus-ai/patronus-py
+    - patronus-ai/patronus-typescript
   open_source: unknown
   commercial: true
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
+  label: Hosted service · you call their endpoint
   confidence: low
   source:
   - pricing
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: free
@@ -106,11 +111,12 @@ apis:
   tags:
   - Hallucination Detection
   - Judge Model
-  - Open-Source
+  - Open Source
   tags_raw:
   - Hallucination Detection
   - Judge Model
   - Open Source
+  - Open-Source
   humanURL: https://www.patronus.ai/blog/lynx-state-of-the-art-open-source-hallucination-detection-model
   properties:
   - url: https://www.patronus.ai/blog/lynx-state-of-the-art-open-source-hallucination-detection-model
@@ -125,11 +131,12 @@ apis:
   tags:
   - Judge Model
   - Reasoning Evaluation
-  - Open-Source
+  - Open Source
   tags_raw:
   - Judge Model
   - Reasoning Evaluation
   - Open Source
+  - Open-Source
   humanURL: https://www.patronus.ai/blog/glider
   properties:
   - url: https://www.patronus.ai/blog/glider
