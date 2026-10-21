@@ -50,7 +50,7 @@ tags_raw:
 x-lifecycle:
   status: retired
   retired: '2026-10-21'
-  note: "Patronus AI has retired its evaluation API, evaluators and guardrails; the API entries below are kept as a historical record and are no longer offered. Source - Evan Jolley (Patronus AI marketing), email 2026-10-21; current positioning at https://www.patronus.ai/company. docs.patronus.ai and api.patronus.ai answer 401."
+  note: "Patronus AI has retired its evaluation API, evaluators and guardrails; the API entries below are kept as a historical record and are no longer offered, except the open-weight Lynx and Glider models and the FinanceBench dataset, which remain published on Hugging Face. Source - Evan Jolley (Patronus AI marketing), email 2026-10-21; current positioning at https://www.patronus.ai/company. docs.patronus.ai and api.patronus.ai answer 401."
 description: >-
   Patronus AI is a research lab developing training data and simulated environments for frontier AI. Its work spans reinforcement learning environments and digital world models for agents operating in software.
 
@@ -112,7 +112,6 @@ apis:
     to Node.js and browser environments used by JavaScript-first AI applications.
 - aid: patronus-ai:lynx
   name: Lynx
-  x-status: retired
   tags:
   - Hallucination Detection
   - Judge Model
@@ -133,7 +132,6 @@ apis:
     weights and as a hosted judge inside the Patronus Evaluation API.
 - aid: patronus-ai:glider
   name: Glider
-  x-status: retired
   tags:
   - Judge Model
   - Reasoning Evaluation
@@ -164,7 +162,6 @@ apis:
     modes, tool misuse, and reasoning errors across multi-step runs.
 - aid: patronus-ai:financebench
   name: FinanceBench
-  x-status: retired
   tags:
   - Benchmarks
   - Datasets

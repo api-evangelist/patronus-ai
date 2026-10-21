@@ -1,6 +1,6 @@
 # patronus-ai
 
-> **Note (2026-10-21):** Patronus AI is a research lab developing training data and simulated environments for frontier AI. Its work spans reinforcement learning environments and digital world models for agents operating in software. The evaluation API, evaluators and guardrails described below are **no longer offered**; they are kept here as a historical record. Current positioning: https://www.patronus.ai/company
+> **Note (2026-10-21):** Patronus AI is a research lab developing training data and simulated environments for frontier AI. Its work spans reinforcement learning environments and digital world models for agents operating in software. The evaluation API, evaluators and guardrails described below are **no longer offered**; they are kept here as a historical record. The open-weight Lynx and Glider models and the FinanceBench dataset remain published on Hugging Face. Current positioning: https://www.patronus.ai/company
 
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
