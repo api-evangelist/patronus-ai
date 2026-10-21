@@ -60,6 +60,7 @@ specificationVersion: '0.23'
 apis:
 - aid: patronus-ai:patronus-evaluation-api
   name: Patronus Evaluation API
+  x-status: retired
   tags:
   - LLM Evaluation
   - Judges
@@ -81,6 +82,7 @@ apis:
     and model variants over datasets.
 - aid: patronus-ai:patronus-python-sdk
   name: Patronus Python SDK
+  x-status: retired
   tags:
   - SDK
   - Python
@@ -96,6 +98,7 @@ apis:
     running evaluators inline, recording traces, and pushing experiments to the Patronus platform.
 - aid: patronus-ai:patronus-typescript-sdk
   name: Patronus TypeScript SDK
+  x-status: retired
   tags:
   - SDK
   - TypeScript
@@ -109,6 +112,7 @@ apis:
     to Node.js and browser environments used by JavaScript-first AI applications.
 - aid: patronus-ai:lynx
   name: Lynx
+  x-status: retired
   tags:
   - Hallucination Detection
   - Judge Model
@@ -129,6 +133,7 @@ apis:
     weights and as a hosted judge inside the Patronus Evaluation API.
 - aid: patronus-ai:glider
   name: Glider
+  x-status: retired
   tags:
   - Judge Model
   - Reasoning Evaluation
@@ -146,6 +151,7 @@ apis:
     scoring with low latency and cost relative to large frontier judges.
 - aid: patronus-ai:percival
   name: Percival
+  x-status: retired
   tags:
   - Agent Debugging
   - Tracing
@@ -158,6 +164,7 @@ apis:
     modes, tool misuse, and reasoning errors across multi-step runs.
 - aid: patronus-ai:financebench
   name: FinanceBench
+  x-status: retired
   tags:
   - Benchmarks
   - Datasets
