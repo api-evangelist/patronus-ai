@@ -1,0 +1,45 @@
+generated: '2026-10-23'
+method: searched
+checked:
+- hugging-face/integrations/hugging-face-integration-edges.yml
+source:
+- hugging-face/integrations/hugging-face-integration-edges.yml
+edges:
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/PatronusAI
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - PatronusAI/financebench
+  - PatronusAI/figmatrace
+  - PatronusAI/HaluBench
+  - PatronusAI/financebench-test
+  - PatronusAI/TRAIL
+  - PatronusAI/world_model_corpus
+  - PatronusAI/trace-dataset
+  - PatronusAI/glider-multilingual-reward-bench-suite
+  - PatronusAI/Llama-3-Patronus-Lynx-8B-Instruct-v1.1
+  - PatronusAI/glider
+  - PatronusAI/Llama-3-Patronus-Lynx-8B-Instruct
+  - PatronusAI/kimi-k3-nvfp4
+  - PatronusAI/glider-gguf
+  - PatronusAI/Llama-3-Patronus-Lynx-8B-Instruct-Q4_K_M-GGUF
+  - PatronusAI/Llama-3-Patronus-Lynx-8B-v1.1-Instruct-Q8-GGUF
+  - PatronusAI/Qwen3.8-27B-Figmatrace-SFT
+  - PatronusAI/enterprise_scenarios_leaderboard
+  - PatronusAI/GLIDER
+  - PatronusAI/LynxDemo
+  - PatronusAI/BLUR-leaderboard
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
